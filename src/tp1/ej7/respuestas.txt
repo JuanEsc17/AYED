@@ -1,0 +1,7 @@
+b. Si en lugar de usar un ArrayList en el inciso anterior hubiera usado un LinkedList ¿Qué 
+diferencia encuentra respecto de la implementación? Justifique
+-ArrayList es más eficiente en acceso por índice, mientras que LinkedList es mejor en inserciones/eliminaciones intermedias.
+
+¿Existen otras alternativas para recorrer los elementos de la lista del punto 7a.?
+-Con un bucle for-each, Iterator, o usando forEach() con expresiones lambda.
+
