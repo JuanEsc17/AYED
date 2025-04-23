@@ -19,7 +19,7 @@ public class ContadorArbol {
 		return l;
 	}
 	
-	public void numsParesPre(LinkedList<Integer> l, BinaryTree<Integer> arbol) {
+	public void numsParesPre(List<Integer> l, BinaryTree<Integer> arbol) {
 		if(arbol.getData()%2==0) l.add(arbol.getData());
 		if(arbol.hasLeftChild()) numsParesPre(l,arbol.getLeftChild());
 		if(arbol.hasRightChild()) numsParesPre(l,arbol.getRightChild());
@@ -31,7 +31,7 @@ public class ContadorArbol {
 		return l;
 	}
 	
-	public void numsParesIn(LinkedList<Integer> l, BinaryTree<Integer> arbol) {
+	public void numsParesIn(List<Integer> l, BinaryTree<Integer> arbol) {
 		if(arbol.hasLeftChild()) numsParesIn(l,arbol.getLeftChild());
 		if(arbol.getData()%2==0) l.add(arbol.getData());
 		if(arbol.hasRightChild()) numsParesIn(l,arbol.getRightChild());
@@ -43,7 +43,7 @@ public class ContadorArbol {
 		return l;
 	}
 	
-	public void numsParesPost(LinkedList<Integer> l, BinaryTree<Integer> arbol) {
+	public void numsParesPost(List<Integer> l, BinaryTree<Integer> arbol) {
 		if(arbol.hasLeftChild()) numsParesPost(l,arbol.getLeftChild()); 
 		if(arbol.hasRightChild()) numsParesPost(l,arbol.getRightChild());
 		if(arbol.getData()%2==0) l.add(arbol.getData());
