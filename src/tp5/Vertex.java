@@ -7,5 +7,7 @@ public interface Vertex<T> {
 	public void setData();
 	
 	public int getPosition();
+
+	void setData(T data);
 	
 }
